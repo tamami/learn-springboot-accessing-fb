@@ -33,6 +33,7 @@ public class HelloController {
         String fields[] = {"id","email","first_name","last_name","middle_name"};
         //PagedList<Post> feed = facebook.feedOperations().getFeed();
         User userProfile = facebook.userOperations().getUserProfile();
+
         model.addAttribute("facebookProfile", userProfile);
         model.addAttribute("feed", userProfile);
         return "hello";

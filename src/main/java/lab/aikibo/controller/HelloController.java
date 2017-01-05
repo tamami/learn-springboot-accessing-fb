@@ -34,12 +34,12 @@ public class HelloController {
         */
 
         //model.addAttribute("facebookProfile", facebook.userOperations().getUserProfile());
-        String fields[] = {"id","email","first_name","last_name","middle_name"};
+        //String fields[] = {"id","email","first_name","last_name","middle_name"};
         //PagedList<Post> feed = facebook.feedOperations().getFeed();
-        User userProfile = facebook.userOperations().getUserProfile();
+        //User userProfile = facebook.userOperations().getUserProfile();
 
-        model.addAttribute("facebookProfile", userProfile);
-        model.addAttribute("feed", userProfile);
+        //model.addAttribute("facebookProfile", userProfile);
+        //model.addAttribute("feed", userProfile);
         return "hello";
     }
 
